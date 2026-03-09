@@ -175,3 +175,12 @@ def evaluate_dataset(image_dir, gt_dir, iou_threshold=0.5):
     print(f"F1-score  : {f1:.4f}")
 
     print("\nEvaluation completed.")
+
+    return {
+    "TP": total_tp,
+    "FP": total_fp,
+    "FN": total_fn,
+    "precision": precision,
+    "recall": recall,
+    "f1": f1
+}

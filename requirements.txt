@@ -8,3 +8,4 @@ matplotlib
 tqdm
 shapely
 pillow
+scikit-learn
